@@ -1,0 +1,276 @@
+export const initialData = [
+{
+    id:1,
+    month_id:8,
+    weekDay:2,
+    date:1,
+    work:{
+        hours:0,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[108,108.07,"usd"],
+    learn:[
+        {type:[60,"eng"]}
+    ],
+    income:[
+    ],
+    outcome:[
+        {out:[133,"pln","eat"]}
+    ]
+},
+{
+    id:2,
+    month_id:8,
+    weekDay:3,
+    date:2,
+    work:{
+        hours:7.5,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[109.8,106.98,"usd"],
+    learn:[
+        {type:[60,"type"]}
+    ],
+    income:[
+    ],
+    outcome:[
+        {out:[1.09,"usd","invest"]}
+    ]
+},
+{
+    id:3,
+    month_id:8,
+    weekDay:4,
+    date:3,
+    work:{
+        hours:7,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[110.17,108.10,"usd"],
+    learn:[
+        {type:[60,"eng"]},
+        {type:[60,"react"]},
+        {type:[60,"type"]},
+    ],
+    income:[
+        {in:[1.08,"usd","invest"]}
+    ],
+    outcome:[
+        {out:[50,"pln","eat"]},
+        {out:[150,"usd","borowed to my sister"]}
+    ]
+},
+{
+    id:4,
+    month_id:8,
+    weekDay:5,
+    date:4,
+    work:{
+        hours:8,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[111.27,113.3,"usd"],
+    learn:[
+        {type:[60,"type"]}
+    ],
+    income:[
+        {in:[5.1,"usd","non_pharm eur/usd"]}
+    ],
+    outcome:[
+        {out:[5,"pln","internet"]}
+    ]
+},
+{
+    id:5,
+    month_id:8,
+    weekDay:6,
+    date:5,
+    work:{
+        hours:0,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[111.27,113.3,"usd"],
+    learn:[
+    ],
+    income:[
+    ],
+    outcome:[
+        {out:[35,"pln","clothes"]},
+        {out:[30,"pln","hygiene"]},
+        {out:[71.3,"pln","eat"]},
+    ]
+},
+{
+    id:6,
+    month_id:8,
+    weekDay:7,
+    date:6,
+    work:{
+        hours:6.5,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[111.27,113.3,"usd"],
+    learn:[
+        {type:[180,"react"]},
+        {type:[60,"css"]},
+    ],
+    income:[
+    ],
+    outcome:[
+    ]
+},
+{
+    id:7,
+    month_id:8,
+    weekDay:1,
+    date:7,
+    work:{
+        hours:9.5,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[112.38,114.25,"usd"],
+    learn:[
+        {type:[120,"react"]}
+    ],
+    income:[
+        {in:[0.95,"usd","invest"]}
+    ],
+    outcome:[
+    ]
+},
+{
+    id:8,
+    month_id:8,
+    weekDay:2,
+    date:8,
+    work:{
+        hours:9,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[113.50,113.47,"usd"],
+    learn:[
+        {type:[120,"react"]}
+    ],
+    income:[
+    ],
+    outcome:[
+        {out:[39,"pln","hygien"]},
+        {out:[96.85,"pln","eat"]},
+        {out:[50,"pln","lost"]},
+    ]
+},
+{
+    id:9,
+    month_id:8,
+    weekDay:3,
+    date:9,
+    work:{
+        hours:7.5,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[114.63,114.63,"usd"],
+    learn:[
+        {type:[60,"react"]}
+    ],
+    income:[
+        {in:[1.18,"usd","invest"]}
+    ],
+    outcome:[
+        {out:[3,"pln","eat"]}
+    ]
+},
+{
+    id:10,
+    month_id:8,
+    weekDay:4,
+    date:10,
+    work:{
+        hours:7.5,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[115.68,115.19,"usd"],
+    learn:[
+        {type:[60,"react"]}
+    ],
+    income:[
+        {in:[0.53,"usd","invest"]}
+    ],
+    outcome:[
+        {out:[5,"pln","internet"]}
+    ]
+},
+{
+    id:11,
+    month_id:8,
+    weekDay:5,
+    date:11,
+    work:{
+        hours:8.5,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[116.93,119.29,"usd"],
+    learn:[
+        {type:[60,"react"]}
+    ],
+    income:[
+        {in:[4.1,"usd","invest"]}
+    ],
+    outcome:[
+        {out:[13,"pln","eat"]}
+    ]
+},
+{
+    id:12,
+    month_id:8,
+    weekDay:6,
+    date:12,
+    work:{
+        hours:0,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[116.93,119.29,"usd"],
+    learn:[
+        {type:[120,"react"]}
+    ],
+    income:[
+    ],
+    outcome:[
+        {out:[132,"pln","eat"]}
+    ]
+},
+{
+    id:13,
+    month_id:8,
+    weekDay:7,
+    date:13,
+    work:{
+        hours:0,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[116.93,119.29,"usd"],
+    learn:[
+        {type:[180,"react"]}
+    ],
+    income:[
+    ],
+    outcome:[
+    ]
+}
+
+
+
+
+];

@@ -1,0 +1,7 @@
+.mainPageContainer{
+width: 100vw;
+height: 1500px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
