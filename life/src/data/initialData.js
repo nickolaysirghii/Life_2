@@ -60,7 +60,7 @@ export const initialData = [
     ],
     outcome:[
         {out:[50,"pln","eat"]},
-        {out:[150,"usd","borowed to my sister"]}
+        // {out:[150,"usd","borowed to my sister"]}
     ]
 },
 {
@@ -327,6 +327,7 @@ export const initialData = [
         {type:[180,"react"]}
     ],
     income:[
+
     ],
     outcome:[
     ]

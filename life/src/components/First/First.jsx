@@ -1,7 +1,9 @@
 import React from 'react';
 import "./first.css";
 import { useSelector , useDispatch } from 'react-redux';
-import { changeIt } from "../../Store/Slices/TheFirstSlice"
+import { changeIt } from "../../Store/Slices/TheFirstSlice";
+import { initialData } from '../../data/initialData';
+import { changeUSD , changeEUR , changeMDL } from "../../Store/Slices/TheFirstSlice"
 
 const First = () => {
     const dispatcher = useDispatch();
@@ -10,16 +12,25 @@ const First = () => {
     const incomeWeekData = useSelector((state)=>state.first_sl.incomeTotalWeek);
     const incomeDayData = useSelector((state)=>state.first_sl.incomeTotalToday);
     const incomeAVG_data = useSelector((state)=>state.first_sl.incomeAVG);
+    const monthAVG_data = useSelector((state)=>state.first_sl.incomeAVG_Month);
+    const weekAVG_data = useSelector((state)=>state.first_sl.incomeAVG_Week);
+    const outcomeTotalData = useSelector((state)=>state.first_sl.outcomeTotal);
+    const outcomeMonthData = useSelector((state)=>state.first_sl.outcomeTotalMonth);
+    const outcomeWeekData = useSelector((state)=>state.first_sl.outcomeTotalWeek);
+    const outcomeDayData = useSelector((state)=>state.first_sl.outcomeTotalToday);
+    const incomeClearData = useSelector((state)=>state.first_sl.incomeClear);
+
+    const vautaItitle = useSelector((state)=>state.first_sl.val_title);
    
-   const usd = ()=>{
-    dispatcher(changeIt(4))
-   }
+    
 
     
+//    console.log()
+   
   return (
     <div className='firstContainer'>
         <div className='firstHead'>
-            <div onClick={usd}>USD</div>
+            <div onClick={()=>{dispatcher(changeUSD())}}>USD</div>
             <div>EUR</div>
             <div>PLN</div>
             <div>MDL</div>
@@ -27,28 +38,28 @@ const First = () => {
     <div className='continerRow'>
         <p>Income</p>
         <div className='leftCont'>
-        <p>Total</p>
-        <p className='firstAmount'>{incomeTotalData.toFixed(2)}<span>pln</span></p>
+        <p>This Year</p>
+        <p className='firstAmount'>{incomeTotalData.toFixed(2)}<span>{vautaItitle}</span></p>
         <p>This Month</p>
-        <p className='firstAmount'>{incomeMonthData.toFixed(2)}<span>pln</span></p>
+        <p className='firstAmount'>{incomeMonthData.toFixed(2)}<span>{vautaItitle}</span></p>
         <p>This Week</p>
-        <p className='firstAmount'>{incomeWeekData.toFixed(2)}<span>pln</span></p>
+        <p className='firstAmount'>{incomeWeekData.toFixed(2)}<span>{vautaItitle}</span></p>
         <p>Today</p>
-        <p className='firstAmount'>{incomeDayData.toFixed(2)}<span>pln</span></p>
+        <p className='firstAmount'>{incomeDayData.toFixed(2)}<span>{vautaItitle}</span></p>
         </div>
 
     </div>
     <div className='continerRow'>
         <p>Inc avg.</p>
         <div className='leftCont'>
-        <p>Total</p>
-        <p className='firstAmount'>{incomeAVG_data.toFixed(2)}<span>pln</span></p>
+        <p>This Year</p>
+        <p className='firstAmount'>{incomeAVG_data.toFixed(2)}<span>{vautaItitle}</span></p>
         <p>This Month</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>{monthAVG_data.toFixed(2)}<span>{vautaItitle}</span></p>
         <p>This Week</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>{weekAVG_data.toFixed(2)}<span>{vautaItitle}</span></p>
         <p>Today</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>{incomeDayData.toFixed(2)}<span>{vautaItitle}</span></p>
         </div>
 
     </div>
@@ -57,13 +68,13 @@ const First = () => {
         <p>Outcome</p>
         <div className='leftCont'>
         <p>Total</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>{outcomeTotalData.toFixed(2)}<span>{vautaItitle}</span></p>
         <p>This Month</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         <p>This Week</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         <p>Today</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         </div>
 
     </div>
@@ -71,13 +82,13 @@ const First = () => {
         <p>Out avg.</p>
         <div className='leftCont'>
         <p>Total</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         <p>This Month</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         <p>This Week</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         <p>Today</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         </div>
 
     </div>
@@ -86,13 +97,13 @@ const First = () => {
         <p>Inc clear</p>
         <div className='leftCont'>
         <p>Total</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>{(incomeTotalData - outcomeTotalData).toFixed(2)}<span>{vautaItitle}</span></p>
         <p>This Month</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         <p>This Week</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         <p>Today</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         </div>
 
     </div>
@@ -100,13 +111,13 @@ const First = () => {
         <p>clear avg.</p>
         <div className='leftCont'>
         <p>Total</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         <p>This Month</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         <p>This Week</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         <p>Today</p>
-        <p className='firstAmount'>50<span>%</span></p>
+        <p className='firstAmount'>50<span>{vautaItitle}</span></p>
         </div>
 
     </div>
