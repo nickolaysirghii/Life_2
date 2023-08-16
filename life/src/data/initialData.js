@@ -2,7 +2,7 @@ export const initialData = [
 {
     id:1,
     month_id:8,
-    weekDay:2,
+    weekDay:[1,2],
     date:1,
     work:{
         hours:0,
@@ -22,7 +22,7 @@ export const initialData = [
 {
     id:2,
     month_id:8,
-    weekDay:3,
+    weekDay:[1,3],
     date:2,
     work:{
         hours:7.5,
@@ -42,7 +42,7 @@ export const initialData = [
 {
     id:3,
     month_id:8,
-    weekDay:4,
+    weekDay:[1,4],
     date:3,
     work:{
         hours:7,
@@ -66,7 +66,7 @@ export const initialData = [
 {
     id:4,
     month_id:8,
-    weekDay:5,
+    weekDay:[1,5],
     date:4,
     work:{
         hours:8,
@@ -87,7 +87,7 @@ export const initialData = [
 {
     id:5,
     month_id:8,
-    weekDay:6,
+    weekDay:[1,6],
     date:5,
     work:{
         hours:0,
@@ -108,7 +108,7 @@ export const initialData = [
 {
     id:6,
     month_id:8,
-    weekDay:7,
+    weekDay:[1,7],
     date:6,
     work:{
         hours:6.5,
@@ -128,7 +128,7 @@ export const initialData = [
 {
     id:7,
     month_id:8,
-    weekDay:1,
+    weekDay:[2,1],
     date:7,
     work:{
         hours:9.5,
@@ -148,7 +148,7 @@ export const initialData = [
 {
     id:8,
     month_id:8,
-    weekDay:2,
+    weekDay:[2,2],
     date:8,
     work:{
         hours:9,
@@ -170,7 +170,7 @@ export const initialData = [
 {
     id:9,
     month_id:8,
-    weekDay:3,
+    weekDay:[2,3],
     date:9,
     work:{
         hours:7.5,
@@ -191,7 +191,7 @@ export const initialData = [
 {
     id:10,
     month_id:8,
-    weekDay:4,
+    weekDay:[2,4],
     date:10,
     work:{
         hours:7.5,
@@ -212,7 +212,7 @@ export const initialData = [
 {
     id:11,
     month_id:8,
-    weekDay:5,
+    weekDay:[2,5],
     date:11,
     work:{
         hours:8.5,
@@ -225,6 +225,7 @@ export const initialData = [
     ],
     income:[
         {in:[4.1,"usd","invest"]}
+        
     ],
     outcome:[
         {out:[13,"pln","eat"]}
@@ -233,7 +234,7 @@ export const initialData = [
 {
     id:12,
     month_id:8,
-    weekDay:6,
+    weekDay:[2,6],
     date:12,
     work:{
         hours:0,
@@ -253,14 +254,75 @@ export const initialData = [
 {
     id:13,
     month_id:8,
-    weekDay:7,
+    weekDay:[2,7],
     date:13,
+    work:{
+        hours:4.5,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[116.93,119.29,"usd"],
+    learn:[
+        {type:[120,"react"]}
+    ],
+    income:[
+    ],
+    outcome:[
+    ]
+},
+{
+    id:14,
+    month_id:8,
+    weekDay:[3,1],
+    date:14,
+    work:{
+        hours:11,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[118.09,118.09,"usd"],
+    learn:[
+        {type:[120,"react"]}
+    ],
+    income:[
+    ],
+    outcome:[
+        {out:[30,"pln","eat"]},
+        {out:[1.2,"usd","invest"]},
+        {out:[5,"pln","internet"]}
+    ]
+},
+{
+    id:15,
+    month_id:8,
+    weekDay:[3,2],
+    date:15,
     work:{
         hours:0,
         salary:0,
         perHour:[20.81,"pln"]
     },
-    investState:[116.93,119.29,"usd"],
+    investState:[119.27,121.07,"usd"],
+    learn:[
+        {type:[180,"react"]}
+    ],
+    income:[
+        {in:[1.8,"usd","invest"]}
+    ],
+    outcome:[
+]
+},
+{
+    id:16,
+    month_id:8,
+    weekDay:[3,3],
+    date:16,
+    work:{
+        hours:0,
+        salary:0,
+        perHour:[20.81,"pln"]
+    },
+    investState:[120.46,222.22,"usd"],
     learn:[
         {type:[180,"react"]}
     ],
@@ -268,8 +330,7 @@ export const initialData = [
     ],
     outcome:[
     ]
-}
-
+},
 
 
 
