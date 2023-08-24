@@ -60,7 +60,7 @@ export const initialData = [
     ],
     outcome:[
         {out:[50,"pln","eat"]},
-        // {out:[150,"usd","borowed to my sister"]}
+        {out:[150,"usd","borowed to my sister"]}
     ]
 },
 {
@@ -322,14 +322,16 @@ export const initialData = [
         salary:0,
         perHour:[20.81,"pln"]
     },
-    investState:[120.46,222.22,"usd"],
+    investState:[120.46,121.27,"usd"],
     learn:[
         {type:[180,"react"]}
     ],
     income:[
-
+        {in:[0.2,"usd","invest"]}
     ],
     outcome:[
+        {out:[20,"pln","eat"]},
+        {out:[5,"pln","internet"]},
     ]
 },
 

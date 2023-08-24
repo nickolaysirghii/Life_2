@@ -1,0 +1,19 @@
+
+
+.window_itemContainer{
+    position: relative;
+    background-color: black;
+    margin-bottom: 3px;
+}
+.window_inner{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    bottom: -3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    
+
+}

@@ -1,0 +1,41 @@
+.totalInfo{
+    width: 100%;
+    height: 2000px;
+    position: relative;
+    overflow: hidden;
+}
+.eurPlnUsd{
+    position: absolute;
+    top: -400px;
+    left: 0;
+    width: 50%;
+    height: 570px;
+    
+}
+.plnMdl{
+    position: absolute;
+    top: -750px;
+    right: 0;
+    width: 50%;
+    height: 920px;
+    
+}
+.totalInfo form{
+    width: 100%;
+    height: 100px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.totalInfo input{
+    width: 70px;
+    border: 1px solid rgb(226, 223, 223);
+}
+.totalInfo button{
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+    border: none;
+}

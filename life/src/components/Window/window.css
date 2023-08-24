@@ -1,0 +1,25 @@
+.wraperWindow{
+   position: relative;
+   height: 500px;
+   overflow: scroll;
+   width: 90%;
+
+}
+
+
+.windowContainer{
+   width: 4500px;
+   border: 2px solid black;
+   display: flex;
+   align-items: flex-end;
+   position: absolute;
+   top: 0;
+   z-index: -1;
+}
+
+.inDivs{
+ width: 100%;
+border-bottom: 1px solid black;
+font-size: 12px;
+height: 5%;
+}

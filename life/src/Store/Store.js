@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import TheFirstSlice from "./Slices/TheFirstSlice"
+import TheMainSlice from "./Slices/TheMainSlice";
+import  TheEnglishSlice  from "./Slices/EnglishSlice";
 
 export const store = configureStore({
     reducer: {
-      first_sl: TheFirstSlice
+      mainState: TheMainSlice,
+      english:TheEnglishSlice
     
       }
 });
